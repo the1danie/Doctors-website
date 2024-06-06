@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Услуги</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/main.css">
+        <link rel="stylesheet" href="static/css/services.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    </head>
+    <body>
+        <header id="header" class="header ">
+
+            <div>
+                <button class="burger-menu-btn" onclick="open_menu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+    
+            <div>
+                <a class="logo-container" href="index.html">
+                    <img class="logo-img" src="img/header/logo.png" alt="logo">
+                    <span class="logo-text">ВетМир</span>
+                </a>
+            </div>
+    
+            <nav class="nav-desktop">
+                <ul>
+    
+                    <li>
+                        <a href="appointment.html">Запись на приём</a>
+                    </li>
+    
+                    <li>
+                        <a href="services.html">Услуги и тарифы</a>
+                    </li>
+    
+                    <li>
+                        <a href="veterinary_pharmacy.html">Ветеринарная аптека</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="reviews.html">Отзывы</a>
+                    </li>
+    
+                    <li class="dropdown">
+                        <div>
+                            <a class="about-btn" href="#">О нас</a>
+                            <img class="dropdown-image about-btn" src="img/header/dropdown.png">
+                            <ul class="dropdown-menu">
+                        
+                                <li><a href="employees.html">Наши сотрудники</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="nav-mobile">
+                <ul class="nav-mobile-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="appointment.html">Запись на приём</a></li>
+                    <li><a href="services.html">Услуги и тарифы</a></li>
+                    <li><a href="veterinary_pharmacy.html">Ветеринарная аптека</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="employees.html">Наши сотрудники</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <main class="container">
+            <div class="services">
+                <h1 class="services-title">Цены на услуги в ВетМир</h1>
+                <p class="services-text">В заботе о наших пушистых друзьях, ветеринарная клиника "ВетМир" стремится к безупречной гибкости и максимальной адаптивности в формировании ценовой политики. Мы убеждены, что каждый пациент уникален, и его потребности требуют индивидуального подхода. Поэтому мы отказываемся от жестких пакетных предложений, которые часто приводят к излишне высоким расходам для наших посетителей.</p><br>
+                <p class="services-text">В клинике "ВетМир" вы не найдете общих тарифных планов, где все услуги упакованы в один пучок. Мы предлагаем честную и прозрачную систему ценообразования, где каждая услуга  оценивается отдельно. </p><br>
+                <p class="services-text">Наши цены формируются исключительно на основе фактически предоставленных услуг. Мы ценим доверие наших клиентов и стремимся к тому, чтобы каждый владелец мог быть уверен, что оплачивает только ту медицинскую помощь, которая требуется его питомцу. В итоге, клиенты клиники "ВетМир" могут быть уверены в том, что получают максимальное качество за разумные цены.</p><br>
+                <div class="services-container">
+                    <div class="services-block">
+                        <div class="services-item">
+                            <div class="services-item-title"> Прием врача <br> от ₸ 4000 </div>
+                            <div class="services-item-content">Осмотр животного,
+                                сбор анамнеза.
+                                Постановка предварительного
+                                диагноза.</div>
+                        </div>
+
+                        <div class="services-item">
+                            <div class="services-item-title"> Ветеринарная стоматология <br>от ₸ 5500 </div>
+                            <div class="services-item-content">Стоматологические услуги такие как устранение налета, полировка зубной эмали, пломбирование, покрытие лаком, реставрирование и так далее.</div>
+                        </div>
+                        <div class="services-item">
+                            <div class="services-item-title"> Вакцинация животного <br>от ₸ 8700 </div> 
+                            <div class="services-item-content">Осмотр животного,
+                                сбор анамнеза.
+                                Постановка предварительного
+                                диагноза.</div>
+                        </div>
+                        <div class="services-item">
+                            <div class="services-item-title"> Ветеринарный онколог <br>от ₸ 5500 </div> 
+                    
+                            <div class="services-item-content">Наши клиника оснащена высокотехнологичным оборудованием, что позволяет  нам работать с пациентами разной степени сложности. Мы применяем такие  виды лечения как оперативное удаление новообразований и химиотерапия.</div>
+                        </div>
+
+                        <div class="services-item">
+                            <div class="services-item-title"> Чипирование <br>от ₸6650</div>
+                    
+                            <div class="services-item-content">Стоимость чипа, регистрация в международной базе данных.</div>                           
+                        </div>
+
+                        <div class="services-item">
+                            <div class="services-item-title"> Хирургия <br>от ₸8000</div>
+                    
+                            <div class="services-item-content">
+                                Цены указаны без наркоза и расходных материалов.</div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="services-block-2">
+                        <div class="services-item">
+                            <div class="services-item-title"> Кастрация <br>от ₸7000</div>
+                    
+                            <div class="services-item-content-2 content-2">
+                                Цены указаны без наркоза и расходных материалов.</div>
+                        </div>
+
+                        <div class="services-item">
+                            <div class="services-item-title"> Стерилизация <br>от ₸14000</div>
+                    
+                            <div class="services-item-content-2 content-2">
+                                Цены указаны без наркоза и расходных материалов.</div>
+                        </div>
+                        <div class="services-item">
+                            <div class="services-item-title"> Тест на бешенство ЭКСПРЕСС
+                                <br>от ₸ 145 000</div>
+                            <div class="services-item-content-2 content-2">Результат анализа в течении 1-го месяца</div>
+                        </div>
+
+                        <div class="services-item">
+                            <div class="services-item-title"> Тест на бешенство
+                                <br>от ₸ 95 000</div>
+                            <div class="services-item-content-2 content-2">Результат анализа в течении 2-3 месяцев</div>
+                            
+                        </div>
+                    </div>
+                    <a href="appointment.html" class="services-button">Записаться на приём</a>
+                </div>
+                
+            </div>
+            
+        </main>
+        
+        <footer class="footer">
+        <div class="footer-content container">
+            <div id = "footer-column-1" class="footer-column">
+                <h2 class="footer-title">Меню</h2>
+                <div class="footer-menu">
+                    <div class="footer-menu-column">
+                        <a href="appointment.html">Запись на приём</a>
+                        <a href="index.html">Главная</a>
+                        <a href="reviews.html">Отзывы</a>
+                        
+                    </div>
+                    <div class="footer-menu-column">
+                        <a href="veterinary_pharmacy.html">Ветеринарная аптека</a>
+                        <a href="services.html">Услуги и тарифы</a>
+                        <a href="employees.html">Наши сотрудники</a>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+
+            <div id = "footer-column-2" class="footer-column">
+                <h2 class="footer-title">Где мы находимся</h2>
+                <div class="footer-address">
+                    <span>Улица Жамбыла Жабаева 156</span>
+                    
+                    <div class="map-container">
+                        <a href="https://maps.app.goo.gl/7U9RFL6irMCrFNrc9" target="_blank" class="map-link">
+                          <img src="img/footer/location.png" alt="Карта">
+                          <div class="map-overlay">Открыть карту</div>
+                        </a>
+                    </div>
+                      
+                </div>
+            </div>
+            
+
+            <div id = "footer-column-3" class="footer-column">
+                <div class="contacts">
+                    
+                    <h2 class="footer-title">Социальные сети</h2>
+                    <div class="social-networks">
+                        <a href="https://web.whatsapp.com/">
+                            <img src="img/icons/Whats App.png" alt="whatsapp">
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="img/icons/instagram.png" alt="instagram">
+                        </a>
+                        <a href="https://telegram.org">
+                            <img src="img/icons/telegram.png" alt="telegram">
+                        </a>
+                        
+                    </div>
+                </div>
+                <div>
+                    <h2 class="footer-title">Контакты</h2>
+                    <div class="numbers">
+                        <span>+ 7 777 123 56 78</span>
+                        <span>+ 7 777 987 65 43</span>
+                    </div>
+                    <span class="footer-info">© ВетМир, 2023–2024</span>
+                </div>                  
+                               
+            </div> 
+            
+        </div>
+        
+    </footer>
+        <script src="static/scripts/script.js"></script>
+        <script src="static/scripts/reviews.js"></script>
+
+    </body>
+</html

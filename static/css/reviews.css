@@ -1,0 +1,319 @@
+.reviews-title{
+    font-size:3rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    background: none;
+}
+.reviews-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 7rem;
+}
+
+.reviews-grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem;
+    justify-content: center;
+}
+
+.reviews-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:2rem;
+    gap:1rem;
+    background-color: rgb(184, 207, 220);
+    border-radius: 30px;
+    transition: transform 0.2s; /* добавляем плавный переход */
+    
+}
+.reviews-item:hover{
+    transform: scale(1.05);
+}
+
+.reviews-item-text{
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+}
+
+.reviews-item-title{
+    font-weight: 500;
+    font-size: 2rem;
+    padding-bottom:1rem;
+    background-color: inherit;
+
+}
+
+.reviews-item-desc{
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-bottom:1rem;
+    background-color: inherit;
+
+}
+
+.reviews-item-link{
+    font-weight: 500;
+    transform: skew(-15deg);
+    background-color: inherit;
+
+}
+
+.reviews-item-img{
+    display: flex;
+    background-color: inherit;
+    padding-bottom: 0.5rem;
+    
+    
+
+
+}
+.reviews-item-img img{
+    width: 8rem;
+    height: 10rem;
+    border-radius: 30px;
+    background-color: inherit;
+    object-fit: cover;
+    object-position: center;
+}
+
+.reviews-button{
+    display: inline-block;
+    text-align: center;
+    align-self: center;
+    font-weight: 600;
+    margin-top: 2rem;
+    width: 40%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #007bff; /* Цвет фона кнопки */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавное изменение цвета фона при наведении */
+}
+
+.reviews-button:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении */
+}
+
+.subtitle{
+    font-size: 2.3rem;
+    margin-top:4rem;
+    margin-bottom: 1rem;
+}
+
+.statistic-container{
+    display: flex;
+}
+.statistic-text{
+    width: 50%;
+    padding: 1rem;
+    
+}
+
+.statistic-subtitle{
+    font-size: 1.6rem;
+    margin:1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.statistic-desc{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.chartContainer {
+    width: 50%;   /* Задается ширина, составляющая 80% */
+    height: auto; /* Высота равняется 50% от высоты видимой части окна */
+  }
+
+.pieChart{
+    margin-top:3rem;  
+}
+
+.popup {
+    display: none;
+    
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+   
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    position: relative;
+}
+
+.form-title{
+    background-color: inherit;
+    font-size: 1.5rem;
+
+}
+.close-btn {
+    color: #aaa;
+    background-color: inherit;
+    float: right;
+    font-size: 28px;
+    margin-top: -3% ;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    
+    flex-direction: column;
+    background-color: inherit;
+
+}
+
+label {
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    background-color: inherit;
+
+}
+
+input, textarea {
+    margin-top: 0.3125rem;
+    padding: 0.625rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: inherit;
+}
+
+textarea{
+    height: 10rem;
+}
+
+button[type="submit"] {
+    margin-top: 1.2rem;
+    padding: 0.635rem 1.25rem;
+    font-size: 1.3rem;
+    background-color: #318CE7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+
+}
+
+button[type="submit"]:hover {
+    background-color: #075985;
+}
+
+@media (max-width: 992px) { 
+    .reviews-button{
+        width: 50%;
+    }
+    
+    .statistic-container{
+        flex-direction: column;}
+    
+    .statistic-text{
+        width: 80%;
+    }
+
+    .statistic-subtitle{
+        text-align: left;
+    }
+
+    .chartContainer {
+        width: 100%;   /* Задается ширина, составляющая 80% */
+        height: auto; /* Высота равняется 50% от высоты видимой части окна */
+      }
+    .popup-content {
+    
+    width: 90%;
+    
+    }
+    }
+   
+
+
+@media (max-width: 769px) {
+    html{
+        font-size: 14px;
+    }
+    .reviews-grid{
+
+        grid-template-columns: 35rem;
+        justify-content: center;
+    }
+
+    .reviews-title{
+        text-align: center;
+    }
+
+    .reviews-button{
+        width: 60%;
+    }
+
+    .statistic-text{
+        width: 90%;
+    }
+
+    .popup-content {
+    
+        width: 100%;
+        
+        }
+
+    .popup-content {
+       
+        margin-top: 25%;
+        
+    }
+    
+}
+
+
+@media (max-width: 480px) {
+    html{
+        font-size: 11px;
+    }
+
+    .reviews-grid{
+
+        grid-template-columns: 30rem;
+        justify-content: center;
+    }
+
+    .reviews-button{
+        width: 70%;
+    }
+
+    .statistic-text{
+        width: 100%;
+    }
+}

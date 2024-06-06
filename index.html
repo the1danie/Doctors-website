@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/landing.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <header id="header" class="header ">
+
+        <div>
+            <button class="burger-menu-btn" onclick="open_menu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div>
+            <a class="logo-container" href="index.html">
+                <img class="logo-img" src="img/header/logo.png" alt="logo">
+                <span class="logo-text">ВетМир</span>
+            </a>
+        </div>
+
+        <nav class="nav-desktop">
+            <ul>
+
+                <li>
+                    <a href="appointment.html">Запись на приём</a>
+                </li>
+
+                <li>
+                    <a href="services.html">Услуги и тарифы</a>
+                </li>
+
+                <li>
+                    <a href="veterinary_pharmacy.html">Ветеринарная аптека</a>
+                </li>
+                
+                
+                <li>
+                    <a href="reviews.html">Отзывы</a>
+                </li>
+
+                <li class="dropdown">
+                    <div>
+                        <a class="about-btn" href="#">О нас</a>
+                        <img class="dropdown-image about-btn" src="img/header/dropdown.png">
+                        <ul class="dropdown-menu">
+                    
+                            <li><a href="employees.html">Наши сотрудники</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav-mobile">
+            <ul class="nav-mobile-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="appointment.html">Запись на приём</a></li>
+                <li><a href="services.html">Услуги и тарифы</a></li>
+                <li><a href="veterinary_pharmacy.html">Ветеринарная аптека</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="employees.html">Наши сотрудники</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main class="container">
+        <div class="intro">
+            <div class="flex-container">
+                <div class=intro-text>
+                    <h1>Ветеринарная клиника в Петропавловске</h1><br>
+                    <span>Заботливое отношение к вам и вашему питомцу</span><br><br>
+                    <h2>Более 1000 положительных отзывов</h2><br>
+                    <div class="intro-buttons">
+                        <a href="appointment.html" class="intro-button" >Запись на приём</a>
+                        <a href="reviews.html" id="openWindowLink" class="intro-button" >Оставить отзыв</a>
+                    </div>
+                </div>
+                
+                <div class="intro-img">
+                    <img src="img/landing/intro-animals.png" alt="animals">
+                </div>
+            </div>
+            <div class="intro-icons">
+                <div>
+                    <img class="intro-icons-image" src="img/landing/clock-icon.png" alt="clock-icon"><br>
+                    <span class="intro-icons-text">Часы работы 09:00 - 18:00</span>
+                </div>
+
+                <div>
+                    <img class="intro-icons-image" src="img/landing/Monitor-icon.png" alt="clock-icon"><br>
+                    <span class="intro-icons-text">Современное оборудование</span>
+                </div>
+
+                <div>
+                    <img class="intro-icons-image" src="img/landing/Cartshop-icon.png" alt="clock-icon"><br>
+                    <span class="intro-icons-text" >Ветеринарная аптека</span>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <h1 class="about-title">Ветеринарная клиника ВетМир</h1>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/landing/Left photolanding-about-dog.png">
+                </div>
+                <div class="about-text">
+                    <h2 class="about-text-title"> О нашей клинике</h2><br>
+                    <span>В «ВетМир» ветеринарные врачи постоянно совершенствуют свои знания и  навыки, регулярные специализации и обучения, посещение  сертифицированных  мероприятий по Казахстану, СНГ и дальнего зарубежья.</span><br><br>
+                    <span>Оснащение клиники позволяет проводить множественные исследования.</span><br><br>
+                    <span>К Вашим услугам высококвалифицированные специалисты, современное  оборудование, широкий спектр препаратов, аксессуаров для ваших  животных,лояльные цены.</span><br><br>
+                </div>
+            </div>
+        </div>
+        
+        <div class="services">
+            <h1 class="services-title">Наши услуги</h1>
+            <div class="services-content">
+                <div class="services-grid">
+                    <div class="services-content-item">
+                        <img src="img/landing/services_images/Therapy.png">
+                        <h2>Терапия</h2>
+                        <span>Меры квалифицированной ветеринарной помощи</span>
+                    </div>
+                    <div class="services-content-item">
+                        <img src="img/landing/services_images/Surgery.png">
+                        <h2>Хирургия</h2>
+                        <span>Оперативное лечение заболеваний</span>
+                    </div>
+                    <div class="services-content-item">
+                        <img src="img/landing/services_images/Cardio.png">
+                        <h2>Кардиология</h2>
+                        <span>Квалифицированная ветеринарная кардиология</span>
+                    </div>
+                    <div class="services-content-item">
+                        <img src="img/landing/services_images/Odontology.png">
+                        <h2>Стоматология</h2>
+                        <span>Диагностика и лечение зубов ваших питомцев</span>
+                    </div>
+                    <div class="services-content-item">
+                        <img src="img/landing/services_images/Microscope.png">
+                        <h2>Лаборатория</h2>
+                        <span>Современное лабораторное оборудование</span>
+                    </div>
+                    <div class="services-content-item">
+                        <img src="img/landing/services_images/Eye.png">
+                        <h2>Офтальмология</h2>
+                        <span>Диагностика и лечение глазных заболеваний и патологий вспомогательного аппарата глаза</span>
+                    </div>
+                    <div class="services-content-item">
+                        <img src="img/landing/services_images/Hazard.png">
+                        <h2>Онкология</h2>
+                        <span>Квалифицированная ветеринарная помощь онкологического направления</span>
+                    </div>
+                    <div class="services-content-item">
+                        <img src="img/landing/services_images/Virus.png">
+                        <h2>Вирусология</h2>
+                        <span>Профилактика инфекционных заболеваний путем плановой вакцинации</span>
+                    </div>
+                </div>
+                <a class="services-button" href="services.html">Узнать цены</a>
+            </div>
+            
+        </div>
+        
+        <div class="our-team">
+            <h1 class="our-team-title">
+                Наша команда
+            </h1>
+            <div class="our-team-content">
+                <div class="our-team-text">
+                    <div class="our-team-text-item">
+                        <img class="our-team-icon" src="img/our_team/Group Discussion.png" alt="Group">
+                        <span>Наши специалисты принимают участие в международных конференциях</span>
+                    </div>
+
+                    <div class="our-team-text-item">
+                        <img class="our-team-icon" src="img/our_team/Certificate.png" alt="Certificate">
+                        <span>Каждые 5 лет  наш персонал повышает квалификацию и получают сертификаты.</span>
+                    </div>
+
+                    <div class="our-team-text-item">
+                      
+                        <img class="our-team-icon" src="img/our_team/Scientific work.png" alt="Scientific">
+                        
+                        <span>Консультации и поддержка до, во время лечения и после него, рекомендации по уходу, содержанию, кормлению.</span>
+                    </div>
+                </div>
+                
+                <img class="our-team-jpg" src="img/our_team/Right photodoctor.png">
+            </div>
+        </div>
+        <div class="reviews">
+            <div class="reviews-title-flex">
+                <h1 class="reviews-title">
+                    Отзывы о нас
+                </h1>
+    
+                <a class="reviews-button">Все отзывы</a>
+    
+            </div>
+            <div class="reviews-content">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="card swiper-slide">
+                        
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="img/landing/reviews/1.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="reviews-name">Дмитрий Л.</h2>
+                                <p class="description">"Очень понравилось, как врачи работают с животными. Они не только профессионалы своего дела, но и люди с добрым сердцем. Теперь мы будем обращаться только сюда!"</p>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                        
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="img/landing/reviews/2.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="reviews-name">Марина К</h2>
+                                <p class="description">"Отличная клиника с дружелюбным персоналом. Нашему щенку сделали все необходимые прививки и дали полезные советы по уходу. Мы остались очень довольны!"</p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                        
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="img/landing/reviews/3.jpeg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="reviews-name">Алексей Н</h2>
+                                <p class="description">"Впервые побывали в этой клинике и остались под большим впечатлением. Отличное оборудование, внимательный персонал и уютная атмосфера. Теперь мы - ваши постоянные клиенты!"</p>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+                        
+                            <div class="image-content">
+                                <div class="card-image">
+                                    <img src="img/landing/reviews/4.jpg" alt="" class="card-img">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="reviews-name">Адина М</h2>
+                                <p class="description">"Очень рекомендую эту ветеринарную клинику! Врачи здесь действительно любят животных и делают все возможное, чтобы помочь им. Наш котик быстро пошел на поправку благодаря вашему лечению!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                
+                <img class="reviews-img" src="img/landing/reviews-dog.jpeg" alt="reviews-dog">
+
+            </div>
+        </div>
+
+        <div class="add-info-container">
+            <div class="feedback">
+                <div class="feedback-subtitle">
+                    Оставьте ваш номер телефона и мы перезвоним вам в течении 10-30 минут
+                </div>
+                <form class="feedback-form">
+                    <input class="feedback-input" placeholder="+7 (---) --- ----" type="text" id="phone" name="phone" required>
+                    <div class="checkbox-container">
+                        <input id="feedback-checkbox" type="checkbox" required>
+                        <label for="feedback-checkbox" class="checkbox-info" >Я согласен (на) на обработку персональных данных</label>
+                    </div>
+                    <input class= "feedback-button" type="submit" value="Отправить">
+                </form>
+            </div>
+
+            <div class="articles-container">
+                <div class="articles-title-container">
+                    <div class="articles-subtitle">Полезные статьи</div>
+                    <a class="article-link" href="err404.html">Все статьи</a>
+                </div>
+                <div class="article-items">
+                    <div class="article-item">
+                        <div class="article-title">Токсоплазмоз</div>
+                        <div class="article-desc">Откуда ждать угрозы? Три правила профилактики</div>
+                        <a class="article-button" href="err404.html">Читать далее</a>
+                    </div>
+                    <div class="article-item">
+                        <div class="article-title">Болезни крупного рогатого скота</div>
+                        <div class="article-desc">Крупный рогатый скот подвержен различным заболеваниям, среди которых:</div>
+                        <a class="article-button" href="err404.html">Читать далее</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div id = "footer-column-1" class="footer-column">
+                <h2 class="footer-title">Меню</h2>
+                <div class="footer-menu">
+                    <div class="footer-menu-column">
+                        <a href="appointment.html">Запись на приём</a>
+                        <a href="index.html">Главная</a>
+                        <a href="reviews.html">Отзывы</a>
+                        
+                    </div>
+                    <div class="footer-menu-column">
+                        <a href="veterinary_pharmacy.html">Ветеринарная аптека</a>
+                        <a href="services.html">Услуги и тарифы</a>
+                        <a href="employees.html">Наши сотрудники</a>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+
+            <div id = "footer-column-2" class="footer-column">
+                <h2 class="footer-title">Где мы находимся</h2>
+                <div class="footer-address">
+                    <span>Улица Жамбыла Жабаева 156</span>
+                    
+                    <div class="map-container">
+                        <a href="https://maps.app.goo.gl/7U9RFL6irMCrFNrc9" target="_blank" class="map-link">
+                          <img src="img/footer/location.png" alt="Карта">
+                          <div class="map-overlay">Открыть карту</div>
+                        </a>
+                    </div>
+                      
+                </div>
+            </div>
+            
+
+            <div id = "footer-column-3" class="footer-column">
+                <div class="contacts">
+                    
+                    <h2 class="footer-title">Социальные сети</h2>
+                    <div class="social-networks">
+                        <a href="https://web.whatsapp.com/">
+                            <img src="img/icons/Whats App.png" alt="whatsapp">
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="img/icons/instagram.png" alt="instagram">
+                        </a>
+                        <a href="https://telegram.org">
+                            <img src="img/icons/telegram.png" alt="telegram">
+                        </a>
+                        
+                    </div>
+                </div>
+                <div>
+                    <h2 class="footer-title">Контакты</h2>
+                    <div class="numbers">
+                        <span>+ 7 777 123 56 78</span>
+                        <span>+ 7 777 987 65 43</span>
+                    </div>
+                    <span class="footer-info">© ВетМир, 2023–2024</span>
+                </div>                  
+                               
+            </div> 
+            
+        </div>
+        
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+          },
+          spaceBetween: 50,
+        });
+    </script>
+    <script src="static/scripts/script.js"></script>
+</body>
+</html>
+

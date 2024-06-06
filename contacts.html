@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ветеринарная аптека</title>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHeW6jD9qA9NvF--ecA-KxIrspXzXBWTo&callback=console.debug&libraries=maps,marker&v=beta" async defer></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/main.css">
+        <link rel="stylesheet" href="static/css/contacts.css">
+
+</head>
+<body>
+   
+    <header id="header" class="header ">
+
+        <div>
+            <button class="burger-menu-btn" onclick="open_menu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div>
+            <a class="logo-container" href="index.html">
+                <img class="logo-img" src="img/header/logo.png" alt="logo">
+                <span class="logo-text">ВетМир</span>
+            </a>
+        </div>
+
+        <nav class="nav-desktop">
+            <ul>
+
+                <li>
+                    <a href="appointment.html">Запись на приём</a>
+                </li>
+
+                <li>
+                    <a href="services.html">Услуги и тарифы</a>
+                </li>
+
+                <li>
+                    <a href="veterinary_pharmacy.html">Ветеринарная аптека</a>
+                </li>
+                
+                
+                <li>
+                    <a href="reviews.html">Отзывы</a>
+                </li>
+
+                <li class="dropdown">
+                    <div>
+                        <a class="about-btn" href="#">О нас</a>
+                        <img class="dropdown-image about-btn" src="img/header/dropdown.png">
+                        <ul class="dropdown-menu">
+                    
+                            <li><a href="employees.html">Наши сотрудники</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav-mobile">
+            <ul class="nav-mobile-list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="appointment.html">Запись на приём</a></li>
+                <li><a href="services.html">Услуги и тарифы</a></li>
+                <li><a href="veterinary_pharmacy.html">Ветеринарная аптека</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="employees.html">Наши сотрудники</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main class="container contacts-container">
+        <h1 class = "title">Наши контакты</h1>
+        <div class="contacts-content">
+            <div class="contacts-text">
+                <div class="contact-item">
+                    <img src="img/icons/phone.png" alt="phone-icon">
+                    <div class="contact-item-text">
+                        <div>+ 7 777 123 56 78</div>
+                        <div>+ 7 777 987 65 43</div>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <img src="img/icons/Whats App.png" alt="whatsapp-icon">
+                    <div class="contact-item-text">
+                        <div>Whats App:</div>
+                        <div>+ 7 777 345 21 44</div>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <img src="img/icons/instagram.png" alt="instagramm-icon">
+                    <div class="contact-item-text">
+                        <div>Наш инстаграм:</div>
+                        <div><a href="https://www.instagram.com/">https://www.instagram.com/</a></div>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <img src="img/icons/telegram.png" alt="telegram-icon">
+                    <div class="contact-item-text">
+                        <div>Мы в телеграме:</div>
+                        <div><a href="https://web.telegram.org/">https://web.telegram.org/</a></div>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <img src="img/icons/Map_Pin.png" alt="map-icon">
+                    <div class="contact-item-text">
+                        <div>Наше местоположение:</div>
+                        <div>Улица Абая Кунанбаева 19</div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="map">
+                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2296.2794522771137!2d69.12700417714359!3d54.86290396017997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43b23a3e4ac01d4b%3A0x27b0a3bd75d552be!2z0YPQuy4g0JbQsNC80LHRi9C70LAg0JbQsNCx0LDQtdCy0LAgMTU2LCDQn9C10YLRgNC-0L_QsNCy0LvQvtCy0YHQuiAxNTAwMDA!5e0!3m2!1sru!2skz!4v1715077944139!5m2!1sru!2skz" width="100%" height="100%" style="margin-top: auto;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div id = "footer-column-1" class="footer-column">
+                <h2 class="footer-title">Меню</h2>
+                <div class="footer-menu">
+                    <div class="footer-menu-column">
+                        <a href="appointment.html">Запись на приём</a>
+                        <a href="index.html">Главная</a>
+                        <a href="reviews.html">Отзывы</a>
+                        
+                    </div>
+                    <div class="footer-menu-column">
+                        <a href="veterinary_pharmacy.html">Ветеринарная аптека</a>
+                        <a href="services.html">Услуги и тарифы</a>
+                        <a href="employees.html">Наши сотрудники</a>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+
+            <div id = "footer-column-2" class="footer-column">
+                <h2 class="footer-title">Где мы находимся</h2>
+                <div class="footer-address">
+                    <span>Улица Жамбыла Жабаева 156</span>
+                    
+                    <div class="map-container">
+                        <a href="https://maps.app.goo.gl/7U9RFL6irMCrFNrc9" target="_blank" class="map-link">
+                          <img src="img/footer/location.png" alt="Карта">
+                          <div class="map-overlay">Открыть карту</div>
+                        </a>
+                    </div>
+                      
+                </div>
+            </div>
+            
+
+            <div id = "footer-column-3" class="footer-column">
+                <div class="contacts">
+                    
+                    <h2 class="footer-title">Социальные сети</h2>
+                    <div class="social-networks">
+                        <a href="https://web.whatsapp.com/">
+                            <img src="img/icons/Whats App.png" alt="whatsapp">
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="img/icons/instagram.png" alt="instagram">
+                        </a>
+                        <a href="https://telegram.org">
+                            <img src="img/icons/telegram.png" alt="telegram">
+                        </a>
+                        
+                    </div>
+                </div>
+                <div>
+                    <h2 class="footer-title">Контакты</h2>
+                    <div class="numbers">
+                        <span>+ 7 777 123 56 78</span>
+                        <span>+ 7 777 987 65 43</span>
+                    </div>
+                    <span class="footer-info">© ВетМир, 2023–2024</span>
+                </div>                  
+                               
+            </div> 
+            
+        </div>
+        
+    </footer>
+    
+    <script src="static/scripts/script.js"></script>
+</body>
+</html>

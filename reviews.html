@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Услуги</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">        <link rel="stylesheet" href="static/css/main.css">
+        <link rel="stylesheet" href="static/css/reviews.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    </head>
+    <body>
+        <header id="header" class="header ">
+
+            <div>
+                <button class="burger-menu-btn" onclick="open_menu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+    
+            <div>
+                <a class="logo-container" href="index.html">
+                    <img class="logo-img" src="img/header/logo.png" alt="logo">
+                    <span class="logo-text">ВетМир</span>
+                </a>
+            </div>
+    
+            <nav class="nav-desktop">
+                <ul>
+    
+                    <li>
+                        <a href="appointment.html">Запись на приём</a>
+                    </li>
+    
+                    <li>
+                        <a href="services.html">Услуги и тарифы</a>
+                    </li>
+    
+                    <li>
+                        <a href="veterinary_pharmacy.html">Ветеринарная аптека</a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="reviews.html">Отзывы</a>
+                    </li>
+    
+                    <li class="dropdown">
+                        <div>
+                            <a class="about-btn" href="#">О нас</a>
+                            <img class="dropdown-image about-btn" src="img/header/dropdown.png">
+                            <ul class="dropdown-menu">
+                        
+                                <li><a href="employees.html">Наши сотрудники</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="nav-mobile">
+                <ul class="nav-mobile-list">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="appointment.html">Запись на приём</a></li>
+                    <li><a href="services.html">Услуги и тарифы</a></li>
+                    <li><a href="veterinary_pharmacy.html">Ветеринарная аптека</a></li>
+                    <li><a href="reviews.html">Отзывы</a></li>
+                    <li><a href="employees.html">Наши сотрудники</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <main class="container">
+            <h1 class="reviews-title">Наши отзывы</h1>
+
+            <div class="reviews-container">
+                <div class="reviews-grid">
+                    <div class="reviews-item">
+                        <div class="reviews-item-img">
+                            <img src="img/reviews/1.jpg" alt="user-image">
+                        </div>
+    
+                        <div class="reviews-item-text">
+                            <div class="reviews-item-desc">"Ветеринарная клиника "ВетМир" - место, где профессионализм встречается с заботой. Моей кошке было предоставлено первоклассное лечение и внимание. Очень благодарен всему персоналу за их теплоту и заботу!"</div>
+                            <div class="reviews-item-title">Иван Петрович</div>
+                            <div class="reviews-item-link">ivan.petrovich@email.com</div>
+                        </div>
+                        
+                    </div>
+                    <div class="reviews-item">
+                        <div class="reviews-item-img">
+                            <img src="img/reviews/2.jpg" alt="user-image">
+                        </div>
+        
+                        <div class="reviews-item-text">
+                            <div class="reviews-item-desc">"Отличный сервис! Врачи настоящие профессионалы своего дела. Моей собаке быстро помогли, и она снова здорова. Рекомендую всем, кто ценит заботу и внимание к своим питомцам."</div>
+                            <div class="reviews-item-title">Екатерина Смирнова</div>
+                            <div class="reviews-item-link">ekaterina.smirnova@email.com</div>
+                        </div>
+                    
+                    </div>
+                    <div class="reviews-item">
+                        <div class="reviews-item-img">
+                            <img src="img/reviews/3.jpg" alt="user-image">
+                        </div>
+                        <div class="reviews-item-text">
+                            <div class="reviews-item-desc">"Профессионализм и забота - вот что можно сказать о ветеринарной клинике "ВетМир". Моему коту оказали быструю помощь в непростой ситуации. Очень благодарна врачам и персоналу!"</div>
+                            <div class="reviews-item-title">Анна Иванова</div>
+                            <div class="reviews-item-link">anna.ivanova@email.com</div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="reviews-item">
+                        <div class="reviews-item-img">
+                            <img src="img/reviews/4.jpg" alt="user-image">
+                        </div>
+                        <div class="reviews-item-text">
+                            <div class="reviews-item-desc">"Очень доволен услугами клиники "ВетМир". Врачи компетентны и внимательны, они всегда готовы помочь. Моей собаке оказали отличную помощь, и теперь она чувствует себя гораздо лучше."</div>
+                            <div class="reviews-item-title">Алексей Козлов</div>
+                            <div class="reviews-item-link">alexey.kozlov@email.com</div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="reviews-item">
+                        <div class="reviews-item-img">
+                            <img src="img/reviews/5.jpg" alt="user-image">
+                        </div>
+                        <div class="reviews-item-text">
+                            <div class="reviews-item-desc">"Замечательная клиника "ВетМир". Врачи здесь не только квалифицированные специалисты, но и истинные любители животных. Моему питомцу оказали внимание и уход на самом высоком уровне. Рекомендую!"</div>
+                            <div class="reviews-item-title">Мария Николаева</div>
+                            <div class="reviews-item-link">maria.nikolaeva@email.com</div>
+                        </div>
+                        
+                    </div>
+    
+                    <div class="reviews-item">
+                        <div class="reviews-item-img">
+                            <img src="img/reviews/6.jpg" alt="user-image">
+                        </div>
+                        <div class="reviews-item-text">
+                            <div class="reviews-item-desc">"Очень благодарен врачам и персоналу клиники "ВетМир". Моей кошке оказали необходимую помощь в срочной ситуации. Профессионализм и забота на высшем уровне. Спасибо за вашу работу!"</div>
+                            <div class="reviews-item-title">Дмитрий Семенов</div>
+                            <div class="reviews-item-link">dmitriy.semenov@email.com</div>
+                        </div>
+                        
+                    </div>
+    
+                </div>
+                <button id="reviews-button" class="reviews-button"> Оставить отзыв </button>
+                
+                <h2 class="subtitle"> Статистика наших отзывов</h2>
+                <div class="statistic-container">
+
+                    <div class="statistic-text">
+                        <h3 class="statistic-subtitle">
+                            Статистика отзывов клиентов о ветеринарной клинике "ВетМир"
+                        </h3>
+                        <p class="statistic-desc">Отзывы клиентов - это важный показатель качества услуг и уровня удовлетворенности. В клинике "ВетМир" мы гордимся своими клиентами и стремимся предоставлять каждому из них высочайший уровень сервиса и заботы о их питомцах.</p>
+                        
+                        <h3 class="statistic-subtitle">Положительные отзывы:</h3>
+                        <p class="statistic-desc">Более 90% отзывов оставлены нашими клиентами с положительными комментариями о качестве наших медицинских услуг, профессионализме наших врачей и внимательном отношении к питомцам.</p>
+                        
+                        <h3 class="statistic-subtitle">Отзывы о персонале:</h3>
+                        <p class="statistic-desc">Более 95% клиентов высоко оценили дружелюбное и профессиональное обслуживание со стороны нашего персонала, отмечая их внимательность, заботу и компетентность.</p>
+
+                        <h3 class="statistic-subtitle">
+                            Нас рекомендуют:
+                        </h3>
+                        <p class="statistic-desc">Более 85% клиентов выразили готовность рекомендовать клинику "ВетМир" своим друзьям и близким, что является лучшим подтверждением качества нашей работы.</p>
+                        <p class="statistic-desc">Мы благодарим всех наших клиентов за доверие и положительные отзывы. В клинике "ВетМир" мы продолжаем стремиться к улучшению наших услуг и предоставлению самого высокого уровня заботы о вашем любимце.</p>
+
+                        
+                    </div>
+                    <div class="chartContainer">
+                        <h3 class="statistic-subtitle" style="margin-top:2rem">Диаграмма отзывов наших клиентов</h3>
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                    
+
+                </div>
+              
+
+            </div>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn">&times;</span>
+                    <h2 class="form-title">Оставьте ваш отзыв</h2>
+                    <form id="popupForm">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="message">Ваш отзыв:</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <button type="submit">Отправить</a>
+                    </form>
+                </div>
+    </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+        <div class="footer-content container">
+            <div id = "footer-column-1" class="footer-column">
+                <h2 class="footer-title">Меню</h2>
+                <div class="footer-menu">
+                    <div class="footer-menu-column">
+                        <a href="appointment.html">Запись на приём</a>
+                        <a href="index.html">Главная</a>
+                        <a href="reviews.html">Отзывы</a>
+                        
+                    </div>
+                    <div class="footer-menu-column">
+                        <a href="veterinary_pharmacy.html">Ветеринарная аптека</a>
+                        <a href="services.html">Услуги и тарифы</a>
+                        <a href="employees.html">Наши сотрудники</a>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+
+            <div id = "footer-column-2" class="footer-column">
+                <h2 class="footer-title">Где мы находимся</h2>
+                <div class="footer-address">
+                    <span>Улица Жамбыла Жабаева 156</span>
+                    
+                    <div class="map-container">
+                        <a href="https://maps.app.goo.gl/7U9RFL6irMCrFNrc9" target="_blank" class="map-link">
+                          <img src="img/footer/location.png" alt="Карта">
+                          <div class="map-overlay">Открыть карту</div>
+                        </a>
+                    </div>
+                      
+                </div>
+            </div>
+            
+
+            <div id = "footer-column-3" class="footer-column">
+                <div class="contacts">
+                    
+                    <h2 class="footer-title">Социальные сети</h2>
+                    <div class="social-networks">
+                        <a href="https://web.whatsapp.com/">
+                            <img src="img/icons/Whats App.png" alt="whatsapp">
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="img/icons/instagram.png" alt="instagram">
+                        </a>
+                        <a href="https://telegram.org">
+                            <img src="img/icons/telegram.png" alt="telegram">
+                        </a>
+                        
+                    </div>
+                </div>
+                <div>
+                    <h2 class="footer-title">Контакты</h2>
+                    <div class="numbers">
+                        <span>+ 7 777 123 56 78</span>
+                        <span>+ 7 777 987 65 43</span>
+                    </div>
+                    <span class="footer-info">© ВетМир, 2023–2024</span>
+                </div>                  
+                               
+            </div> 
+            
+        </div>
+        
+    </footer>
+        
+        <script src="static/scripts/script.js"></script>
+        <script src="static/scripts/reviews/chart.js"></script>
+        <script src="static/scripts/reviews/reviews.js"></script>
+    </body>
+</html>
+

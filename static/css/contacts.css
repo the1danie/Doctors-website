@@ -1,0 +1,131 @@
+
+
+.contacts-container{
+    background-image: url(../../img/contacts/background-dog.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: fit-content;   
+}
+
+
+.title{
+    font-size:3rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    background: none;
+}
+
+.contacts-content{
+    display: flex;
+    padding-bottom: 7rem;
+    gap: 4rem; /* Пространство между элементами сетки */
+    z-index: -1;
+    background: none;
+    
+}
+
+.contacts-text{
+    display: flex;
+    flex-direction: column;
+    gap:2.5rem;
+    padding:1rem;
+    width: 50%;
+    background-color: #B8CFDC ;
+    opacity: 0.9;
+}
+
+
+.contact-item{
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+    
+    
+}
+.contact-item img{
+    display: flex;
+    width: 40px;
+    height: 40px; 
+    background-color: inherit;
+    
+    
+}
+
+.contact-item-text{
+    margin-left: 2rem;
+    background-color: inherit;
+    
+   
+    
+    
+}
+.contact-item div, .contact-item a{
+    display: flex;
+    flex-direction: column;
+    gap:0.8rem;
+    font-weight: 500;
+    font-size: 1.875;
+    background-color: inherit;
+}
+
+.map{
+    width: 80%;
+    height: 30rem;
+    display: flex;
+    border:0;
+    bottom:0;
+    background: none;
+    
+    
+}
+
+@media (max-width: 992px) {
+    html{
+        font-size: 16px;
+    }
+    .contacts-content{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    
+
+    .map{
+        height: 25rem;
+        width: 80%;
+    }
+    
+
+}
+
+
+@media (max-width: 769px) {
+    html{
+        font-size: 14px;
+    }
+    .map{
+        height: 25rem;
+        width: 90%;
+    }
+    .contacts-text{
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    html{
+        font-size: 11px;
+    }
+
+    .map{
+        height: 25rem;
+        width: 100%;
+    }
+
+    .contacts-text{
+        width: 100%;
+        text-wrap: wrap;
+    }
+}
